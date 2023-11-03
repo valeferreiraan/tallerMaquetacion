@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+
+:root {
+    --azulclaro: #48D6ED;
+    --azuloscuro: #337AB7;
+    --azulnegro: #303342;
+    --negro: #333333;
+    --negro2: #000;
+    --gris: #B2B3B3;
+    --fondo: #FFFEFC;
+    --verdeazul: #157A8A;
+    --Magenta: #9C2759;
+    --blanco: #fff;
+    --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: 'Roboto', sans-serif;
+    --h1-font-size: 2rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .813rem;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body,
+input,
+button {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*=============== LOGIN ===============*/
+.login {
+    position: relative;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+}
+
+.login__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.wave{
+    position: absolute;
+    width: 100%;
+    top:0;
+    left:0;
+}
+
+.login__header{
+    margin-bottom: 15%;
+}
+
+.logo{
+    position: absolute;
+    width: 40%;
+    top:3%;
+    left:3%;
+}
+
+
+
+.login__form {
+
+    position: relative;
+    background-color: hsla(203, 100%, 43%, 0.4);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    backdrop-filter: blur(2px);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.login__title {
+    width: 25%;
+    margin-left: 35%;
+}
+
+
+
+.login__inputs,
+.login__box {
+    display: grid;
+}
+
+.login__inputs {
+    row-gap: 1rem;
+    margin-bottom: 3rem;
+    margin-top: -2rem;
+}
+
+
+.login__box {
+    grid-template-columns: 1fr max-content;
+    column-gap: 0.2rem;
+    border: 2px solid hsla(0, 0%, 100%, .1);
+    padding-inline: .5rem;
+    border-radius: .1rem;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    height: 2rem;
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+
+
+.login__input,
+.login__button {
+    border: none;
+    outline: none;
+}
+
+.login__input {
+    width: 100%;
+    background: none;
+    color: black;
+}
+
+
+
+h2{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-bottom: .3rem;
+}
+
+
+.login__button {
+    width: 80%;
+    height: auto;
+    font-size: 1.1rem;
+    padding: .2rem;
+    margin-bottom: 1rem;
+    background-color: black;
+    border-radius: 0.3rem;
+    color: white;
+    font-weight: lighter;
+    cursor: pointer;
+    margin-left: 10%;
+}
+
+.login__register {
+    font-size: .9rem;
+    text-align: center;
+}
+
+.login__register a {
+    color: black;
+    font-weight: bold;
+}
+
+.login__register a:hover {
+    text-decoration: underline;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+@media screen and (min-width: 576px) {
+    .login {
+        justify-content: center;
+    }
+    .login__form {
+        width: 400px;
+        padding-inline: 2.5rem;
+    }
+    .login__title {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width:  577px){
+
+    .login{
+        justify-content: center;
+    }
+
+    .login__form{
+        width: 40vh;
+    }
+
+    .login__title{
+        margin-bottom: 50px;
+        width: 5rem;
+    }
+
+    .login__register{
+        display: none;
+    }
+
+}
