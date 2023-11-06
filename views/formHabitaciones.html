@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1067cb33f8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/formHabitaciones.css">
+    <title>Habitaciones</title>
+</head>
+<body>
+
+    <main>
+        <div class="encabezado">
+            <div class="imagen">
+                <img src="../assets/img/hotelia campana.svg" class="uno" alt="">
+                <img src="../assets/img/Hotelia horizontal blanco.svg" class="dos" alt="">
+                <img src="../assets/img/opinion/user2.png" class="foto" alt="">
+                <p class="nombre">Angie Vargas</p>
+            </div>
+            <div class="icono" id="color2"><i class="fa-solid fa-bed" id="color"></i><p>Habitaciones</p></div>
+            <div class="icono"><i class="fa-solid fa-bed"></i><p>Mis reservas</p></div>
+            <div class="icono"><i class="fa-solid fa-pencil"></i><p>editar perfil</p></div>
+            <div class="icono" id="cerrar"><i class="fa-solid fa-right-from-bracket"></i><p>Cerrar sesión</p></div>
+        </div>
+        <div class="contenido">
+            <form action="">
+                <h1>Registro de nueva habitación </h1>
+                <div class="espacios"><label for="nomHa">Nombre habitación</label>
+                <input type="text" name="nomHa"></div>
+                <div class="espacios"><label for="numeroHa">N. de habitación</label>
+                <input type="number" name="numeroHa"></div>
+                <div class="camasHues">
+                    <div class="camas">
+                        <label for="camas">N. camas</label><br>
+                        <input type="number" name="camas">
+                        
+                    </div>
+                    <div class="huespedes">
+                        <label for="hues">N. huespedes</label><br>
+                        <input type="number" name="hues">
+                    </div>
+                </div>
+                <div class="espacios"><label for="valor">Valor reserva</label>
+                <input type="number" name="valor"></div>
+                <div class="espacios"><label for="imagen">Imagen principal</label>
+                <input type="text" name="imagen"></div>
+                <div class="espacios"><label for="imagenSe">Imagen segundaria</label>
+                <input type="text" name="imagenSe"></div>
+                <div class="espaciosGrande"><label for="descripcion">Descripcion</label>
+                <input type="text" name="descripcion" id="mas"></div>
+                <div class="iconos">
+                    <input type="checkbox">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <input type="checkbox" id="mas2">
+                    <i class="fa-solid fa-tv" id="mas3"></i>
+                    <input type="checkbox">
+                    <i class="fa-solid fa-wifi"></i>
+                    <input type="checkbox">
+                    <i class="fa-solid fa-snowflake"></i>
+                    <input type="checkbox" id="mas2">
+                    <i class="fa-solid fa-ring" id="mas3"></i>
+                    <input type="checkbox">
+                    <i class="fa-solid fa-dumbbell"></i>
+
+                </div>
+                <button>Registrar</button>
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,726 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+  --azulclaro: #48D6ED;
+  --azuloscuro: #337AB7;
+  --azulnegro: #303342;
+  --negro: #1f1e1e;
+  --negro2: #000;
+  --gris: #B2B3B3;
+  --fondo: #FFFEFC;
+  --verdeazul: #157A8A;
+  --Magenta: #9C2759;
+  --blanco: #fff;
+  --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+
+
+*{
+    margin:0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Marcellus', serif;
+}
+
+html{
+    scroll-behavior: smooth;
+     }
+
+
+/*Para version mobile*/
+@media screen and (max-width: 768px){
+
+.logo{
+    background-color: var(--negro);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+.logo img{
+    width: 30%;
+    margin-left: 10px;
+}
+.logo i{
+    color: var(--blanco);
+    font-size: 2rem;
+    margin-right: 5%;
+}
+    
+.menu{
+    background-color: rgba(1, 10, 52, 0.838);
+    width: 59%;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    animation-name: animarMenu;
+    animation-duration: .5s;
+    display: none;
+}
+
+.menu2{
+    background-color: rgba(1, 10, 52, 0.838);
+    width: 100%;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    animation-name: animarMenu; 
+    animation-duration: .5s;
+}
+
+@keyframes animarMenu{
+    from {top: -300px; opacity: 0;}
+    to{top: 0; opacity: 1;}
+}
+
+
+.menu-hr{
+    width: 90%;
+    margin-top: 20px;
+    background-color: var(--blanco);
+}
+.item{
+padding: 1rem;
+}
+
+nav a{
+    color: var(--blanco);
+    text-decoration: none;
+    text-align: center;
+}
+nav a:hover{
+    background-color: #0B3860;
+    width: 100%;
+}
+.Iniciar{
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    padding: 1rem .5rem;
+    font-family: 'Marcellus', serif;
+    color: var(--blanco);
+}
+
+
+
+.reserva{
+    background-color: var(--Magenta);
+    width: 5%;
+    height: 150px;
+    margin-left: 95.4%;
+    margin-top: 20%;
+    position: fixed;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Playfair Display;
+}
+
+.reserva p{
+    color: #fff;
+    font-size: 15px;
+}
+
+/*Contenedor1*/
+
+.contenedor1{
+    display: flex;
+    align-items: flex-end;
+}
+
+.contenedor1 img{
+    width: 100%;
+    height: 200px;
+}
+
+.contenedor1 .text{
+    width: 80%;
+    margin: 0.5%;
+    font-size: 20px;
+    padding: 3%;
+    color: #fff;
+    font-family: roboto;
+    margin-left: -99.5%;
+    background: linear-gradient(to right, rgb(0,0,0,0.5), rgb(0,0,0,0));
+}
+
+/*contenedor2*/
+
+.contenedor2{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor2 .texto2{
+    font-size: 13px;
+    width: 85%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+.contenedor2 img{
+    display: none;
+}
+
+
+
+#features{
+    background: url(../img/index/bg-features.png);
+    color: white;
+    width: 100%;
+    height: 390px;
+}
+
+.features-title{
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 15px;
+}
+
+.features-description{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.feature{
+    width: 25%;
+    min-width: 150px;
+    margin: 3% 0;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.feature i{
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+}
+
+.feature-blue{
+    background-color: #00325eae;
+}
+
+.feature-black{
+    background-color: rgba(0,0,0,0.59);
+}
+
+
+/*Contenedor3*/
+
+#contenedor3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contenedor3 h1{
+    margin: 4% 0;
+    font-size: 30px;
+}
+
+#contenedor3 iframe{
+    margin-top: 1%;
+    width: 97%;
+    height: 300px;
+}
+
+#contenedor3 h2{
+    margin-top: 8%; 
+    font-size: 15px;
+    text-align: center;
+}
+
+#contenedor3 .linea{
+    width: 90%;
+    background-color: #306da7;
+    height: 1px;
+}
+
+#contenedor3 .numero{
+    margin-bottom: 3%;
+}
+
+/*Contenedor4*/
+
+#contenedor4 .encabezado{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.encabezado img{
+    width: 150%;
+}
+
+.encabezado h1{
+    margin-left: -120%;
+    justify-content: center;
+    margin-top: 3%;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.Comentarioss{
+    width: 100%;
+    background-color: #0B3860;
+    margin-top: -15%;
+    overflow: hidden;
+}
+
+.comentarios{
+    width: 240%;
+
+
+    display: flex;
+    flex-flow: row  nowrap;
+    align-items: center;
+
+    transition: all .5s ease;
+    transform: translateX(-29%);
+}
+
+
+.comentarios .comentario{
+    background: linear-gradient(to right, #3a6692, #064369);
+    width: 70%;
+    height: 20%;
+    margin: 2%;
+}
+
+.comentario .cosas{
+    display: flex;
+}
+
+.comentario img{
+    width: 100%;
+    height: 15%;
+}
+
+.cosas .foto{
+    width: 20%;
+    border-radius: 30px;
+    margin-left: -95%;
+    margin-top: 5%;
+}
+
+.cosas h2{
+    font-size: 15px;
+    color: white;
+    margin: 8% 5%;
+}
+
+.cosas .estrellas{
+    width: 40%;
+    margin-left: -30%;
+    margin-top: 18%;
+}
+
+.cosas .estrellas2{
+    width: 40%;
+    margin-left: -25%;
+    margin-top: 18%;
+}
+
+.comentario p{
+    font-size: 13px;
+    padding: 2% 6%;
+    color: #fff;
+}
+
+.puntos{
+    width: 92%;
+    padding: 0em 1em;
+    margin-bottom: 10%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.puntos .punto{
+    width: 2em;
+    height: .5em;
+    background-color: #a6a8a8;
+    margin: 1em;
+}
+
+.punto.activo{
+    background-color: var(--Magenta);
+}
+
+footer{
+    background-color: #1f1e1e;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer hr{
+    width: 90%;
+}
+
+footer .texto{
+    padding: 5%;
+    font-size: 12px;
+}
+
+.ubi2{
+    display: flex;
+    font-size: 12px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.ubi2 i{
+    margin-right: 4%;
+}
+
+.politicas{
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 12px;
+    width: 90%;
+    
+    margin: 3%;
+}
+
+.redes{
+    margin: 5%;
+}
+
+}
+
+/*Para version escritorio*/
+@media screen and (min-width: 769px){
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Marcellus', serif;
+        background-color: var(--negro); 
+        font-size: 1.2em;
+        padding: 1rem; 
+    }
+    
+    .item{
+        padding: 1rem;
+    }
+    .menu a{
+        color: var(--blanco);
+        text-decoration: none;
+    }
+    .Iniciar{
+        background-color: var(--azuloscuro);
+        padding: 0.5rem 1rem;
+        color: var(--blanco);
+        border-radius: 5px;
+        font-family: 'Marcellus', serif;
+        font-size: 1em;
+    }
+    .menu i{
+        margin-right: 0.5rem;
+    }
+    .logo img{
+        height: 3rem;
+    }
+
+    .logo i{
+        display: none;
+    }
+    
+    .menu-hr{
+        display: none;
+    }
+    
+    /* Cuerpo */
+    
+    
+    .contenedor1{
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .contenedor1 img{
+        width: 100%;
+    }
+    
+    .contenedor1 .text{
+        width: 60%;
+        margin: 0.5%;
+        font-size: 50px;
+        padding: 3%;
+        color: #fff;
+        font-family: roboto;
+        margin-left: -99.5%;
+        background: linear-gradient(to right, rgb(0,0,0,0.5), rgb(0,0,0,0));
+    }
+    
+    
+    .reserva{
+        background-color: var(--Magenta);
+        width: 3%;
+        height: 200px;
+        margin-left: 97%;
+        margin-top: 10%;
+        position: fixed;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: Playfair Display;
+    }
+    
+    .reserva p{
+        color: #fff;
+        font-size: 20px;
+    }
+    
+    .contenedor2{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    
+    .contenedor2 .texto2{
+        font-size: 20px;
+        width: 55%;
+        margin-top: 8%;
+        margin-left: -20%;
+        text-align: justify;
+    }
+    
+    .contenedor2 img{
+        width: 25%;
+        margin-top: -20%;
+        margin-bottom: 10%;
+        margin-left: 110%;
+    }
+    
+    
+    
+    #features{
+        background: url(../img/index/bg-features.png);
+        color: white;
+        padding-top: 1rem;
+        width: 100%;
+        min-height: 250px;
+    }
+    
+    .features-title{
+        background-color: rgba(0,0,0,0.35);
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 1.5em;
+    }
+    
+    .features-description{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .feature{
+        width: 25%;
+        min-width: 180px;
+        max-width: 300px;
+        margin: 3% 0.7rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+    }
+    
+    .feature i{
+        font-size: 2.2em;
+        margin-bottom: 1.5rem;
+    }
+    
+    .feature-blue{
+        background-color: #00325eae;
+    }
+    
+    .feature-black{
+        background-color: rgba(0,0,0,0.59);
+    }
+    
+    
+    #contenedor3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #contenedor3 h1{
+        margin-top: 4%;
+        font-size: 50px;
+    }
+    
+    #contenedor3 iframe{
+        margin-top: 1%;
+        width: 97%;
+        height: 300px;
+    }
+    
+    #contenedor3 h2{
+        margin-top: 2%; 
+    }
+    
+    #contenedor3 .linea{
+        width: 50%;
+        background-color: #306da7;
+        height: 1px;
+    }
+    
+    #contenedor3 .numero{
+        margin-bottom: 3%;
+    }
+    
+    
+    
+    /*contenedor4*/
+    
+    #contenedor4 .encabezado{
+        display: flex;
+    }
+    
+    .encabezado img{
+        width: 100%;
+    }
+    
+    .encabezado h1{
+        margin-left: -65%;
+        margin-top: 3%;
+        font-size: 3.5rem;
+        color: #fff;
+    }
+    
+    .comentarios{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: -5%;
+        margin-bottom: 10%;
+    }
+    
+    .comentarios .comentario{
+        background: linear-gradient(to right, #25587a, #0C3C59);
+        width: 30%;
+        height: 23%;
+    }
+    
+    .comentario .cosas{
+        display: flex;
+    }
+    
+    .comentario img{
+        width: 100%;
+        height: 20%;
+    }
+    
+    .cosas .foto{
+        width: 20%;
+        border-radius: 40px;
+        margin-left: -95%;
+        margin-top: 5%;
+    }
+    
+    .cosas h2{
+        font-size: 20px;
+        color: white;
+        margin: 8% 5%;
+    }
+    
+    .cosas .estrellas{
+        width: 40%;
+        margin-left: -30%;
+        margin-top: 15%;
+    }
+
+    .cosas .estrellas2{
+        width: 40%;
+        margin-left: -25%;
+        margin-top: 15%;
+    }
+
+    .comentario p{
+        padding: 4% 6%;
+        color: #fff;
+    }
+    
+    footer{
+        background-color: var(--negro);
+        color: #fff;
+        display: flex;
+    }
+    
+    footer i{
+        font-size: 30px;
+        margin-left: 5%;
+    }
+    
+    footer .texto{
+        width: 30%;
+        padding: 2% 4%;
+    }
+    
+    footer hr{
+        display: none;
+    }
+    
+    .texto p{
+        font-size: 20px;
+        margin-bottom: 5%;
+    }
+    
+    footer .ubi{
+        width: 35%;
+    }
+    
+    footer .ubi2{
+        display: flex;
+        margin-top: 7%;
+    }
+    
+    footer .ubi2 p{
+        margin: 0% 3%;
+        font-size: 20px;
+    }
+    
+    footer .politicas p{
+        margin: 15% 30%;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .redes{
+        margin-left: -80%;
+        margin-top: 7%;
+        width: 20%;
+    }
+
+}

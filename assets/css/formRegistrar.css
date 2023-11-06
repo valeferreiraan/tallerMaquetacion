@@ -13,10 +13,10 @@
   --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
 }
 
-*{
-    margin: 0;
-}
 
+*{
+    margin:0;
+}
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -24,7 +24,6 @@ body{
     background-repeat: no-repeat;
     background-position: 50% 10%;
 }
-
 h1,h2,h3,h4,h5{
     font-family: 'Marcellus', serif;
 }
@@ -34,7 +33,6 @@ html{
 }
 
 
-
 @media screen and (max-width: 768px){
     
     body{
@@ -42,12 +40,11 @@ html{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-size: 400%;
     }
 
     .encabezado{
         width: 100%;
-        height: 100px;
+        height: 80px;
         margin-top: 6%;
         display: flex;
         flex-direction: column;
@@ -93,7 +90,7 @@ html{
     }
 
     .campo input{
-        height: auto;
+        height: 6%;
         width: 97%;
     }
 
@@ -102,26 +99,18 @@ html{
     }
 
     #tipDoc{
-        height: auto;
+        height: 6%;
         width: 100%;
     }
     #paisNa{
-        height: auto;
+        height: 6%;
         width: 100%;
     }
 
     .terminos{
-        display: flex;
         text-align: center;
-        justify-content: center;
-        flex-direction: column;
         padding: 4%;
     }
-
-    .terminos button{
-        align-self: center;
-    }
-    
     button{
         margin-top: 5%;
         width: 40%;
@@ -209,8 +198,6 @@ html{
 
 
 }
-
-
 
 @media screen and (min-width: 769px){
 
