@@ -1,46 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/login.css">
-
-    <title>Login form</title>
+    <title>Login Form </title>
 </head>
 <body>
-<div class="login">
-    <img src="../assets/img/login/bg-login.png" alt="image" class="login__bg">
 
-    <form action="" class="login__form">
-        <div class="login__header">
-        <img src="../assets/img/My%20path.svg" alt="" class="wave">
-        <img src="../assets/img/Hotelia%20horizontal%20negro.svg" alt="" class="logo">
-        </div>
-        <img src="../assets/img/profile-user.png" alt="" class="login__title" >
-        <div class="login__inputs">
-            <div>
-            <h2> Usuario </h2>
-            <div class="login__box">
-                <input type="email"  required class="login__input">
+<div class="container">
+
+    <div class="form-container log-in-container">
+
+
+
+        <form action="#">
+            <img src="../assets/img/Hotelia%20horizontal%20negro.svg" alt="" class="logo">
+            <h1>Iniciar sesión</h1>
+            <input type="email" placeholder="Usuario" />
+            <input type="password" placeholder="Contraseña" />
+            <a href="#" class="login__pw">¿Olvidaste tu contraseña?</a>
+            <button >Ingresar</button>
+            <div class="login__register">
+                ¿No tienes cuenta? <a href="formRegistrar.html">Regístrate aquí</a>
             </div>
-            </div>
-
-            <div>
-            <h2> Contraseña </h2>
-            <div class="login__box">
-                <input type="password" required class="login__input">
-            </div>
-            </div>
-
-        </div>
+        </form>
 
 
-        <button type="submit" class="login__button">Ingresar</button>
 
-        <div class="login__register">
-            ¿No tienes cuenta? <a href="formRegistrar.html">Regístrate aquí</a>
-        </div>
-    </form>
+    </div>
+    <div class="overlay-container">
+        <img src="../assets/img/login/bg-login.png" alt="">
+    </div>
 </div>
 </body>
 </html>
