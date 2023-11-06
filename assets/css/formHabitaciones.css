@@ -31,6 +31,8 @@ html{
 }
 
 
+
+
 @media screen and (max-width: 768px){
 
     main{
@@ -104,6 +106,15 @@ html{
         align-items: center;
         flex-wrap: wrap;
         border-radius: 5px;
+    }
+
+
+
+    
+    .contenido a:link{
+        outline: none;
+        text-decoration: none;
+        color: #fff;
     }
 
     .contenido h1{
@@ -273,6 +284,22 @@ html{
         flex-wrap: wrap;
         justify-content: space-around;
     }
+
+    a {
+        display: flex;
+    }
+
+    a:link{
+        outline: none;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    a:visited{
+        color:#fff;
+    }
+
+
     .espacios{
         width: 45%;
     }
