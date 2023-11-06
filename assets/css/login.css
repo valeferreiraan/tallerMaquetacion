@@ -27,7 +27,7 @@
 }
 
 body {
-    background-color: #72AFB8;
+    background: linear-gradient(to right, #357baa, #0C3C59);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,7 +64,7 @@ a {
 button {
     border-radius: 20px;
     border: 1px solid var(--verdeazul);
-    background-color: var(--verdeazul);
+    background: linear-gradient(to right, #357baa, #0C3C59);
     color: #FFFFFF;
     font-size: 0.7rem;
     font-weight: bold;

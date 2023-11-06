@@ -30,6 +30,11 @@ html{
     scroll-behavior: smooth;
 }
 
+a{
+    text-decoration: None;
+    color: white;
+}
+
 @media screen and (max-width: 768px){
     main{
         display: flex;

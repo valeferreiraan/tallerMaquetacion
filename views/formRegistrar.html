@@ -108,7 +108,7 @@
             <div class="terminos">
                 <input type="checkbox" name="terminos">
                 <label for="terminos" id="abrirNodal">Acepto Términos y condiciones</label>
-                <button>Ingresar</button>
+                <button><a href="Dashboard.html">Ingresar</a></button>
             </div>
 
             
@@ -136,7 +136,7 @@
             <button id="cerrarNodal">Aceptar</button>
         </div>
     </div>
-    
+
 </body>
 
 <script>
@@ -155,5 +155,10 @@
         nodal.classList.remove('nodal');
         nodal.classList.add('nodal2'); 
     })
+
+    var boton = document.getElementById('miboton');
+    boton.addEventListener('click', function() {
+        window.location.href = 'index.html';
+    });
 </script>
 </html>

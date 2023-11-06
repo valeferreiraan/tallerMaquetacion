@@ -19,7 +19,7 @@
             <input type="email" placeholder="Usuario" />
             <input type="password" placeholder="Contraseña" />
             <a href="#" class="login__pw">¿Olvidaste tu contraseña?</a>
-            <button >Ingresar</button>
+            <button id="miboton">Ingresar</button>
             <div class="login__register">
                 ¿No tienes cuenta? <a href="formRegistrar.html">Regístrate aquí</a>
             </div>
@@ -32,5 +32,11 @@
         <img src="../assets/img/login/bg-login.png" alt="">
     </div>
 </div>
+<script>
+    var boton = document.getElementById('miboton');
+    boton.addEventListener('click', function() {
+        window.location.href = 'Dashboard.html';
+    });
+</script>
 </body>
 </html>
