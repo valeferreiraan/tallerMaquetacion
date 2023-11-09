@@ -1,0 +1,10 @@
+.unidades{
+    display: flex;
+    justify-content: space-evenly !important;
+}
+
+
+
+.container button{
+    border-radius: 20px;
+}
