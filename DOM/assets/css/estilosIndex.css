@@ -1,0 +1,111 @@
+/*PONER ESTO EN TODOS LOS ESTILOS!!*/
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Englebert&display=swap');
+
+:root{
+    --verdeAzulado: #016A70;
+    --cremita: #FFFFDD;
+    --verdeLimon: #D2DE32;
+    --verdePastel: #A2C579;
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Englebert', sans-serif !important;
+    
+}
+
+.content{
+    margin: 5%;
+
+}
+
+.navv{
+    background-color: var(--verdePastel);
+}
+
+.activo a{
+    color: var(--cremita) !important;
+}
+
+.color a{
+    color: black;
+}
+
+.color a:hover{
+    color: var(--cremita);
+}
+
+
+.title{
+    padding-right: 20px;
+}
+
+/*hasta acá para todos los estilos!!!*/
+
+
+
+h1{
+    font-size: 45px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+.integrantes{
+    width: 100%;
+    background-color: var(--verdeAzulado);
+    color: var(--cremita);
+    padding: 2%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.integrantes h3{
+    font-size: 30px;
+}
+
+.integrantes ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 20px;
+    
+}
+.ejercicios{
+    padding-top: 5%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons a{
+    background-color: var(--verdeAzulado);
+    width: 160px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cremita);
+    border-radius: 20px;
+}
+
+.buttons a:hover{
+    background-color: var(--verdePastel);
+    color: var(--verdeAzulado);
+}
