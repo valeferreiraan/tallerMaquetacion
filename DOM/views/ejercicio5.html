@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 5</title>
+    <link rel="stylesheet" href="../assets/css/ejercicio5.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navv">
+    <div class="container-fluid">
+        <h1 class="title">Taller DOM</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item color activo">
+                    <a class="nav-link " aria-current="page" href="../index.html">Index</a>
+                </li>
+                <li class="nav-item color">
+                    <a class="nav-link" href="#">ejercicio 1</a>
+                </li>
+                <li class="nav-item color">
+                    <a class="nav-link" href="./ejercicio_temp.html">ejercicio 2</a>
+                </li>
+                <li class="nav-item color">
+                    <a class="nav-link" href="#">ejercicio 3</a>
+                </li>
+                <li class="nav-item color">
+                    <a class="nav-link" href="#">ejercicio 4</a>
+                </li>
+                <li class="nav-item color activo">
+                    <a class="nav-link" href="#">ejercicio 5</a>
+                </li>
+                <li class="nav-item color">
+                    <a class="nav-link" href="#">ejercicio 6</a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+              Ejercicios utilizando javascript :)
+            </span>
+        </div>
+    </div>
+</nav>
+
+
+<div class="cards-container">
+<div class="card" id="circleCard">
+    <h2 class="card-title">Círculo</h2>
+    <div class="bar">
+    </div>
+    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpd4nqCRC_PdOycFSItqX_ByWjocxz9wfypWG0pO43gpsDAqhJ" alt="">
+    <button onclick="openModal('circle')">Perímetro</button>
+    <button onclick="openModal('circle', true)">Área</button>
+</div>
+
+
+<div class="card" id="triangleCard">
+    <h2 class="card-title">Triángulo</h2>
+    <div class="bar">
+    </div>
+    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdH2steSg0fn6b-S6GUHuogOLFOQybe4qvfFMByp0REzMp36OD" alt="">
+    <button onclick="openModal('triangle')">Perímetro</button>
+    <button onclick="openModal('triangle', true)">Área</button>
+</div>
+
+<div class="card" id="rectangleCard">
+    <h2 class="card-title">Rectángulo</h2>
+    <div class="bar">
+    </div>
+    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRoeorodW4sTF6suCi3Ci9en3QI9IFklxLBG2mJXVfOIZnyZbe" alt="">
+    <button onclick="openModal('rectangle')">Perímetro</button>
+    <button onclick="openModal('rectangle', true)">Área</button>
+</div>
+
+<div class="card" id="squareCard">
+    <h2 class="card-title">Cuadrado</h2>
+    <div class="bar">
+    </div>
+    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCQ7sgs5DCn6B8wzt5OlH90pz32SKDeZGGm0Vmgx4Hzahl1T46">
+    <button onclick="openModal('square')">Perímetro</button>
+    <button onclick="openModal('square', true)">Área</button>
+</div>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <form id="modalForm">
+        </form>
+    </div>
+</div>
+</div>
+<script src="../assets/js/ejercicio5.js"></script>
+</body>
+</html>

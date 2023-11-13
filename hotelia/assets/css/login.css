@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+:root {
+    --azulclaro: #48D6ED;
+    --azuloscuro: #337AB7;
+    --azulnegro: #303342;
+    --negro: #333333;
+    --negro2: #000;
+    --gris: #B2B3B3;
+    --fondo: #FFFEFC;
+    --verdeazul: #157A8A;
+    --Magenta: #9C2759;
+    --blanco: #fff;
+    --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: 'Roboto', sans-serif;
+    --h1-font-size: 2rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .813rem;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to right, #357baa, #0C3C59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    margin: -20px 0 50px;
+}
+
+
+h1 {
+    font-weight: bold;
+    margin: 0 0 10%;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+}
+
+span {
+    font-size: 12px;
+}
+
+a {
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid var(--verdeazul);
+    background: linear-gradient(to right, #357baa, #0C3C59);
+    color: #FFFFFF;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 1rem 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+form {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+
+}
+
+input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.log-in-container {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+
+.overlay-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.overlay-container img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+
+.social-container {
+    margin: 50px 0;
+}
+
+
+.login__register {
+    font-size: .9rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.login__register a {
+    color: black;
+    font-weight: bold;
+}
+
+.login__register a:hover {
+    text-decoration: underline;
+}
+
+.login__pw{
+    color: black;
+    font-weight: bold;
+}
+
+.login__pw:hover {
+    text-decoration: underline;
+}
+
+.login__button{
+    color: white;
+}
+
+
+
+form img{
+    width: 50%;
+    margin-top:-20%;
+    margin-bottom: 10%;
+
+}
+
+
+
+
+@media screen and (max-width: 769px){
+
+    .overlay-container{
+        display: none;
+    }
+
+    .container{
+        width: 50%;
+    }
+
+    .log-in-container{
+        left: 0;
+        width: 100%;
+        z-index: 2;
+    }
+
+    button{
+        font-size: 0.5rem;
+    }
+
+}
