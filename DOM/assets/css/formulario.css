@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Englebert&display=swap');
+
+:root{
+    --verdeAzulado: #016A70;
+    --cremita: #FFFFDD;
+    --verdeLimon: #D2DE32;
+    --verdePastel: #A2C579;
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Englebert', sans-serif !important;
+    
+}
+
+.content{
+    margin: 5%;
+
+}
+
+.navv{
+    background-color: var(--verdePastel);
+}
+
+.activo a{
+    color: var(--cremita) !important;
+}
+
+.color a{
+    color: black;
+}
+
+.color a:hover{
+    color: var(--cremita);
+}
+
+
+.title{
+    padding-right: 20px;
+}
