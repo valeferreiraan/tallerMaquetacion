@@ -13,7 +13,6 @@
 
 body{
     font-family: 'Englebert', sans-serif !important;
-    
 }
 
 .content{
@@ -40,4 +39,18 @@ body{
 
 .title{
     padding-right: 20px;
+}
+
+.formulario {
+    height: 870px;
+    width: 80%;
+    background-color: var(--verdeAzulado);
+    color: var(--cremita);
+    padding: 2%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.centrar {
+    display: flex;
+    justify-content: center;
 }
