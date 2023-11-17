@@ -1,0 +1,73 @@
+/*PONER ESTO EN TODOS LOS ESTILOS!!*/
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Englebert&display=swap');
+
+:root{
+    --verdeAzulado: #016A70;
+    --cremita: #FFFFDD;
+    --verdeLimon: #D2DE32;
+    --verdePastel: #A2C579;
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Englebert', sans-serif !important;
+    
+}
+
+.content{
+    margin: 5%;
+
+}
+
+.navv{
+    background-color: var(--verdePastel);
+}
+
+.activo a{
+    color: var(--cremita) !important;
+}
+
+.color a{
+    color: black;
+}
+
+.color a:hover{
+    color: var(--cremita);
+}
+
+
+.title{
+    padding-right: 20px;
+}
+
+/*hasta acá para todos los estilos!!!*/
+
+.selector{
+    margin-left: 30%;
+    width: 30%;
+    text-align: center;
+    margin-top: 10%;
+    background-color: var(--verdePastel);
+    padding: 5% 2%;
+    border-radius: 11px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.btn {
+    margin: 10px;
+}
+
+.btn-primary {
+    background-color: var(--cremita);
+    color: black;
+    border: var(--cremita);
+}
+
+.botonesSelector {
+    margin-top: 2%;
+    flex-wrap: wrap;
+}
